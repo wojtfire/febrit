@@ -1,0 +1,43 @@
+:host {
+  .container {
+    .header-logo {
+      margin-right: 120px;
+
+      svg {
+        display: block;
+        width: auto;
+        height: 25px;
+        max-height: 25px;
+        max-width: 100px;
+      }
+    }
+
+    .header-options {
+      display: flex;
+      height: 100%;
+      align-self: center;
+      font-size: 14px;
+      font-family: "TT Commons";
+      font-weight: bold;
+      color: rgb( 153, 153, 153 );
+
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        .header-option-title {
+          display: flex;
+          align-self: center;
+          margin: 0 40px 0 0;
+          transition: 0.4s;
+
+          &:hover {
+            color: black;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
