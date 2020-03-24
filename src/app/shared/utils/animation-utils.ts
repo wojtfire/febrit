@@ -1,8 +1,8 @@
 import {Rect} from '../../core/model/api-models';
 import {ElementRef} from '@angular/core';
-import {delay} from 'rxjs/operators';
 
 export class AnimationUtils {
+
   static mouseInRect = (element: Rect, mouseEvent: MouseEvent, padding?: number): boolean => {
     const mouseX = mouseEvent.x;
     const mouseY = mouseEvent.y;
@@ -22,29 +22,19 @@ export class AnimationUtils {
       const elementStyle = ref.nativeElement.querySelector('.header-logo').style;
       const newX = event.x - element.startX - element.width;
       const newY = event.y - element.startY - element.height;
-      if (!element.animating && !element.moving) {
-        element.animating = true;
-        elementStyle.transition = `0.5s`;
-        elementStyle.transform = `translate(${0.3 * newX}px, ${0.3 * newY}px)`;
+      elementStyle.transform = `scale(1.1) translate(${0.3 * newX}px, ${0.3 * newY}px)`;
+      element.moving = true;
+    } else {
+      if (element.moving) {
+        const elementStyle = ref.nativeElement.querySelector('.header-logo').style;
+        elementStyle.transition = `0.3s`;
+        elementStyle.transform = `translate(0px, 0px)`;
         setTimeout(() => {
           elementStyle.transition = '';
           element.animating = false;
-          element.moving = true;
-        }, 500);
-      } else if (!element.animating && element.moving) {
-          elementStyle.transform = `translate(${0.3 * newX}px, ${0.3 * newY}px)`;
+          element.moving = false;
+        }, 300);
       }
-    } else {
-        if (element.moving)  {
-          const elementStyle = ref.nativeElement.querySelector('.header-logo').style;
-          elementStyle.transition = `0.3s`;
-          elementStyle.transform = `translate(0px, 0px)`;
-          setTimeout(() => {
-            elementStyle.transition = '';
-            element.animating = false;
-            element.moving = false;
-          }, 300);
-        }
     }
   }
 }
