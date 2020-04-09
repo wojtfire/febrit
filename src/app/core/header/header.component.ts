@@ -2,11 +2,20 @@ import {AfterViewInit, Component, ElementRef, HostListener, Input, ViewChild} fr
 import { HeaderOption } from './model/header-option';
 import { HEADER_OPTIONS } from '../../app-settings';
 import {AnimationElementsService} from '../services/animation-elements.service';
+import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      transition('void => *', [
+        style({ opacity: 0 }),
+        animate(800, style({opacity: 1}))
+      ])
+    ])
+  ]
 })
 export class HeaderComponent implements AfterViewInit {
   @ViewChild('logo', { static: true }) logo: ElementRef;

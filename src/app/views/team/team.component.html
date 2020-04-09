@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="wrapper">
+    <ng-container *ngFor="let tile of tileArr" [ngSwitch]="tile.type">
+      <div *ngSwitchCase="TileType.HEADER" class="tile tile-header"><span>{{ tile.tileName }}</span></div>
+      <div *ngSwitchCase="TileType.EMPTY" class="tile tile-empty"
+      ></div>
+      <div *ngSwitchDefault class="tile tile-employee" [style.backgroundImage]="(tile.empPhotoUrl ? 'url('+ tile.empPhotoUrl +')' : '')">
+        <div class="tile-employee-description">
+          <span class="tile-employee-span employee-name">{{ tile.empName }}</span>
+          <span class="tile-employee-span employee-position">{{ tile.empPosition }}</span>
+        </div>
+
+      </div>
+    </ng-container>
+  </div>
+</div>
