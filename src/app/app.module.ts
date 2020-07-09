@@ -8,12 +8,14 @@ import { HomeComponent } from './views/home/home.component';
 import { AboutComponent } from './views/about/about.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TeamModule} from './views/team/team.module';
+import { EstimateContainerComponent } from './estimate-container/estimate-container.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EstimateContainerComponent
   ],
   imports: [
     AppRoutingModule,

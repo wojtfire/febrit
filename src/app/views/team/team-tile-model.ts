@@ -7,5 +7,7 @@ export interface Tile {
 }
 
 export enum TileType {
-  EMPLOYEE = 'EMPLOYEE', EMPTY = 'EMPTY', HEADER = 'HEADER'
+  EMPLOYEE = "EMPLOYEE",
+  EMPTY = "EMPTY",
+  HEADER = "HEADER",
 }
