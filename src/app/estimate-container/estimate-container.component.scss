@@ -18,6 +18,15 @@
   z-index: -1;
   transform: translateY(-100px);
 
+  &__febrit-overlay {
+    width: 100%;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -26,8 +35,24 @@
     margin: 0 100px;
     width: 100%;
 
+    position: relative;
+
     @media screen and (max-width: 856px) {
       margin: 0 50px;
+    }
+
+    &__febrit-logo {
+      display: block;
+      width: auto;
+      height: 25px;
+      max-height: 25px;
+      max-width: 100px;
+
+      position: absolute;
+      top: -50px;
+      left: 0;
+      fill: #fff;
+      z-index: 100;
     }
 
     &__headers {
