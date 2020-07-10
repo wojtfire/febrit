@@ -9,13 +9,15 @@ import { AboutComponent } from './views/about/about.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TeamModule} from './views/team/team.module';
 import { EstimateContainerComponent } from './estimate-container/estimate-container.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 @NgModule({
   declarations: [
     AboutComponent,
     AppComponent,
     HomeComponent,
-    EstimateContainerComponent
+    EstimateContainerComponent,
+    TechnologyComponent
   ],
   imports: [
     AppRoutingModule,
