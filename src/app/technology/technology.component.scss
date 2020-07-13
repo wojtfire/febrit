@@ -13,6 +13,8 @@
     width: 100%;
     max-width: 1000px;
     margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
 
     display: flex;
     flex-direction: column;
@@ -31,6 +33,17 @@
       & > p {
         font-size: 80px;
         color: #f0f0f0;
+        @media screen and (max-width: 1076px) {
+          font-size: 70px;
+        }
+
+        @media screen and (max-width: 1076px) {
+          font-size: 60px;
+        }
+
+        @media screen and (max-width: 756px) {
+          font-size: 45px;
+        }
       }
 
       & > span {
@@ -43,6 +56,10 @@
 
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 756px) {
+          font-size: 16px;
+        }
 
         &::after {
           content: "";
@@ -60,6 +77,10 @@
       margin-top: 70px;
       max-width: 679.81px;
 
+      @media screen and (max-width: 1000px) {
+        max-width: 500px;
+      }
+
       & > p {
         display: inline-block;
         font-size: 40px;
@@ -73,10 +94,26 @@
         &:hover {
           color: #000;
         }
+
+        @media screen and (max-width: 1200px) {
+          font-size: 35px;
+          line-height: 40px;
+        }
+
+        @media screen and (max-width: 1100px) {
+          font-size: 30px;
+          line-height: 38px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          font-size: 25px;
+          line-height: 35px;
+          margin: 0 3px;
+        }
       }
     }
   }
 }
 
-//animations 
+//animations
 @import "./animations.styles.scss";

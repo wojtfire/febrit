@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TeamModule} from './views/team/team.module';
 import { EstimateContainerComponent } from './estimate-container/estimate-container.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TechnologyComponent } from './technology/technology.component';
     AppComponent,
     HomeComponent,
     EstimateContainerComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    ContactSectionComponent
   ],
   imports: [
     AppRoutingModule,
