@@ -1,23 +1,12 @@
-<section class="technology">
+<section [class]="formatClassNames(activeTechnology.toLowerCase())" class="technology">
   <div class="technology__content">
     <div class="technology__content__headers">
       <p>Technology:</p>
       <span>Pracujemy w takich technologiach:</span>
     </div>
     <div class="technology__content__set">
-      <p>Java(Java Spring Java ee)</p>
-      <p>Angular</p>
-      <p>TypeScript</p>
-      <p>Node.js</p>
-      <p>React.js</p>
-      <p>React Native</p>
-      <p>Kotlin</p>
-      <p>JavaScript</p>
-      <p>SQL</p>
-      <p>(MySQL PostgreSQL)</p>
-      <p>NoSQL(MongoDB)</p>
-      <p>Docker</p>
-      <p>HTML5</p>
+      <p *ngFor="let technology of technologies" (click)="setTechnologyAsActive(technology)"
+        [class.active]="activeTechnology === technology">{{technology}}</p>
     </div>
   </div>
 </section>

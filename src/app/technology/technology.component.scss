@@ -19,6 +19,9 @@
     align-items: flex-start;
     justify-content: flex-end;
 
+    position: relative;
+    z-index: 10;
+
     &__headers {
       display: flex;
       flex-direction: column;
@@ -48,8 +51,7 @@
           height: 2px;
           background-color: #fff;
 
-          position: absolute;
-          right: -100%;
+          margin-left: 17px;
         }
       }
     }
@@ -65,7 +67,16 @@
         line-height: 48px;
         color: #fff;
         margin: 0 5px;
+
+        transition: 0.2s ease-in-out all;
+
+        &:hover {
+          color: #000;
+        }
       }
     }
   }
 }
+
+//animations 
+@import "./animations.styles.scss";

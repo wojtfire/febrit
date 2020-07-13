@@ -1,0 +1,286 @@
+// classes to animations
+.active {
+    color: #000 !important;
+  }
+  
+  .javajavaspringjavaee,
+  .angular,
+  .typescript,
+  .nodejs,
+  .reactjs,
+  .reactnative,
+  .kotlin,
+  .javascript,
+  .sqlmysqlpostgresql,
+  .nosqlmongodb,
+  .docker,
+  .html5 {
+    transition: 0.2s ease-in-out all;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  
+    position: relative;
+  
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      filter: opacity(0.5);
+    }
+  
+    &::after {
+      position: absolute;
+      top: 60%;
+      right: 30px;
+      width: 100%;
+      height: 100%;
+      max-width: 500px;
+  
+      transform: translateY(-50%);
+  
+      content: "";
+      display: block;
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      z-index: 1;
+    }
+  }
+  
+  .javajavaspringjavaee {
+    background-image: linear-gradient(
+      to left,
+      rgb(231, 111, 0),
+      rgb(82, 131, 162)
+    );
+  
+    position: relative;
+    z-index: 2;
+  
+    &::after {
+      background-image: url(../../assets/img/logos/java_logo.svg);
+      max-width: 320px;
+      right: 100px;
+    }
+  }
+  
+  .angular {
+    background-image: linear-gradient(to left, rgb(215, 0, 48), rgb(0, 0, 0));
+  
+    &::before {
+      background-image: linear-gradient(to left, rgb(215, 0, 48), rgb(0, 0, 0));
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/angular_logo.svg);
+    }
+  }
+  
+  .typescript {
+    background-image: linear-gradient(
+      to left,
+      rgb(0, 122, 204),
+      rgb(255, 255, 255)
+    );
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(0, 122, 204) 70%,
+        rgb(255, 255, 255)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/typescript_logo.svg);
+      max-width: 350px;
+      right: 80px;
+    }
+  }
+  
+  .nodejs {
+    background-image: linear-gradient(
+      to left,
+      rgb(129, 180, 109),
+      rgb(48, 48, 48)
+    );
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(129, 180, 109),
+        rgb(48, 48, 48)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/nodejs_logo.svg);
+      max-width: 500px;
+      right: 80px;
+    }
+  }
+  
+  .reactjs {
+    background-image: linear-gradient(
+      to left,
+      rgb(53, 185, 218) 70%,
+      rgb(255, 255, 255)
+    );
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(53, 185, 218) 70%,
+        rgb(255, 255, 255)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/reactjs_logo.svg);
+      max-width: 700px;
+      right: -80px;
+    }
+  }
+  
+  .reactnative {
+    background-image: linear-gradient(
+      to left,
+      rgb(53, 185, 218) 70%,
+      rgb(34, 34, 34)
+    );
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(53, 185, 218) 70%,
+        rgb(34, 34, 34)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/reactjs_logo.svg);
+      max-width: 700px;
+      right: -80px;
+    }
+  }
+  
+  .kotlin {
+    background-image: linear-gradient(
+      to left,
+      rgb(245, 135, 12),
+      rgb(0, 150, 214)
+    );
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(245, 135, 12),
+        rgb(0, 150, 214)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/kotlin_logo.svg);
+      max-width: 300px;
+      right: 120px;
+    }
+  }
+  
+  .javascript {
+    background-image: linear-gradient(to left, rgb(247, 224, 24), rgba(0, 0, 0));
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(247, 224, 24),
+        rgba(0, 0, 0)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/javascript_logo.svg);
+      max-width: 300px;
+      right: 120px;
+    }
+  }
+  
+  .sqlmysqlpostgresql {
+    background-image: linear-gradient(to left rgb(255, 255, 255), rgb(0, 0, 0));
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(255, 255, 255),
+        rgb(0, 0, 0)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/sql_logo.svg);
+      max-width: 300px;
+      right: 120px;
+    }
+  }
+  
+  .nosqlmongodb {
+    background-image: linear-gradient(to left rgb(9, 147, 78), rgb(0, 0, 0));
+  
+    &::before {
+      background-image: linear-gradient(to left, rgb(9, 147, 78), rgb(0, 0, 0));
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/mongodb_logo.svg);
+      max-width: 500px;
+      right: 60px;
+    }
+  }
+  
+  .docker {
+    background-image: linear-gradient(to left rgb(11, 151, 196), rgb(54, 76, 83));
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(11, 151, 196),
+        rgb(54, 76, 83)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/docker_logo.svg);
+      max-width: 500px;
+      right: 60px;
+    }
+  }
+  .html5 {
+    background-image: linear-gradient(to left rgb(241, 101, 36) 50%, rgb(54, 76, 83));
+  
+    &::before {
+      background-image: linear-gradient(
+        to left,
+        rgb(241, 101, 36) 50%,
+        rgb(54, 76, 83)
+      );
+    }
+  
+    &::after {
+      background-image: url(../../assets/img/logos/html5_logo.svg);
+      max-width: 400px;
+      right: 60px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
