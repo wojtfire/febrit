@@ -20,8 +20,11 @@
       font-size: 14px;
       font-family: "TT Commons";
       font-weight: bold;
-      color: rgb( 153, 153, 153 );
+      color: rgb(153, 153, 153);
 
+      @media screen and (max-width: 556px) {
+        flex-direction: column;
+      }
 
       a {
         text-decoration: none;
@@ -33,6 +36,10 @@
           margin: 0 40px 0 0;
           transition: 0.4s;
 
+          @media screen and (max-width: 556px) {
+            margin: 0;
+          }
+
           &:hover {
             color: black;
             transition: 0.4s;
@@ -40,5 +47,13 @@
         }
       }
     }
+  }
+}
+
+.header-logos {
+  @media screen and (max-width: 556px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

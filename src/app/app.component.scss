@@ -1,6 +1,14 @@
 .container {
   flex-direction: column;
   padding: 90px 100px 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 90px 50px 0;
+  }
+
+  @media screen and (max-width: 556px) {
+    padding: 90px 20px 0;
+  }
 }
 
 .side-logo {
@@ -9,10 +17,17 @@
   width: 29vw;
   max-width: 555px;
   position: absolute;
-  top: 0;
+  top: 10px;
   z-index: 2;
 
   path {
     fill: #1d1e1c;
   }
+
+  right: 0 !important;
+
+  @media screen and (max-width: 556px) {
+    top: 90%;
+  }
 }
+

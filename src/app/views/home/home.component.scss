@@ -1,4 +1,4 @@
-@import './../../../assets/scss/variables/variables.scss';
+@import "./../../../assets/scss/variables/variables.scss";
 
 :host {
   .container {
@@ -16,6 +16,23 @@
       padding-top: calc(100vh / 2.9);
       font-size: 74px;
       font-weight: inherit;
+
+      @media screen and (max-width: 1100px) {
+        font-size: 60px;
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 55px;
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 45px;
+      }
+
+      @media screen and (max-width: 556px) {
+        font-size: 35px;
+        padding-left: calc(160vw / 9);
+      }
     }
 
     &-p {
@@ -23,6 +40,10 @@
       max-width: 35%;
       padding-left: calc(100vw / 9 + 25px);
       font-size: 20px;
+
+      @media screen and (max-width: 556px) {
+        padding-left: 50px;
+      }
     }
 
     .description-left {
@@ -69,11 +90,7 @@
         height: 2px;
         background-color: black;
         margin-left: calc(100vw / 9);
-
       }
     }
   }
-
-
 }
-

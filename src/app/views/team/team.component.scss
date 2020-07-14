@@ -4,12 +4,20 @@
   position: relative;
   z-index: 10;
   margin: 0 -100px;
+
+  @media screen and (max-width: 1200px) {
+    margin: 0;
+  }
 }
 
 .wrapper {
   display: flex;
   width: 100vw;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 
   .tile {
     display: flex;
@@ -23,8 +31,12 @@
 
       span {
         font-size: 80px;
-        color: rgb( 240, 240, 240 );
-        margin-left: calc(100vw / 9 + 100px)
+        color: rgb(240, 240, 240);
+        margin-left: calc(100vw / 9 + 100px);
+
+        @media screen and (max-width: 900px) {
+          margin-left: 0;
+        }
       }
     }
 
@@ -38,18 +50,18 @@
       justify-content: flex-end;
       position: relative;
       flex-grow: 1;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-
 
       &-description {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: -20px;
-        right: -20%;
+        top: -10px;
+        right: -10px;
         transform: rotate(90deg);
-        transform-origin: left top;
+        // transform-origin: left top;
 
         .tile-employee-span {
           font-size: 12px;
@@ -59,14 +71,10 @@
           color: black;
         }
 
-        .employee-position{
+        .employee-position {
           color: $th-yellow;
         }
       }
     }
   }
 }
-
-
-
-
