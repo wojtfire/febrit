@@ -54,8 +54,8 @@
 .javajavaspringjavaee {
   background-image: linear-gradient(
     to left,
-    rgb(231, 111, 0),
-    rgb(82, 131, 162)
+    rgba(231, 112, 0, 0.829),
+    rgba(231, 112, 0, 0.829)
   );
 
   position: relative;
@@ -84,11 +84,11 @@
 }
 
 .angular {
-  background-image: linear-gradient(to left, rgb(215, 0, 48), rgb(0, 0, 0));
+  background-image: linear-gradient(to left, rgb(215, 0, 48), rgb(215, 0, 48));
 
-  &::before {
-    background-image: linear-gradient(to left, rgb(215, 0, 48), rgb(0, 0, 0));
-  }
+  // &::before {
+  //   background-image: linear-gradient(to left, rgb(215, 0, 48), rgb(0, 0, 0));
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/angular_logo.svg);
@@ -113,17 +113,17 @@
 .typescript {
   background-image: linear-gradient(
     to left,
-    rgb(0, 122, 204),
-    rgb(255, 255, 255)
+    rgba(0, 122, 204, 0.830),
+    rgba(0, 122, 204, 0.830)
   );
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(0, 122, 204) 70%,
-      rgb(255, 255, 255)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(0, 122, 204) 70%,
+  //     rgb(255, 255, 255)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/typescript_logo.svg);
@@ -151,16 +151,16 @@
   background-image: linear-gradient(
     to left,
     rgb(129, 180, 109),
-    rgb(48, 48, 48)
+    rgb(129, 180, 109)
   );
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(129, 180, 109),
-      rgb(48, 48, 48)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(129, 180, 109),
+  //     rgb(48, 48, 48)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/nodejs_logo.svg);
@@ -188,16 +188,16 @@
   background-image: linear-gradient(
     to left,
     rgb(53, 185, 218) 70%,
-    rgb(255, 255, 255)
+    rgb(53, 185, 218)
   );
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(53, 185, 218) 70%,
-      rgb(255, 255, 255)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(53, 185, 218) 70%,
+  //     rgb(255, 255, 255)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/reactjs_logo.svg);
@@ -263,17 +263,17 @@
 .kotlin {
   background-image: linear-gradient(
     to left,
-    rgb(245, 135, 12),
-    rgb(0, 150, 214)
+    rgba(245, 136, 12, 0.810),
+    rgba(245, 136, 12, 0.810)
   );
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(245, 135, 12),
-      rgb(0, 150, 214)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(245, 135, 12),
+  //     rgb(0, 150, 214)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/kotlin_logo.svg);
@@ -298,15 +298,15 @@
 }
 
 .javascript {
-  background-image: linear-gradient(to left, rgb(247, 224, 24), rgba(0, 0, 0));
+  background-image: linear-gradient(to left, rgba(247, 225, 24, 0.650), rgba(247, 225, 24, 0.900));
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(247, 224, 24),
-      rgba(0, 0, 0)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(247, 224, 24),
+  //     rgba(0, 0, 0)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/javascript_logo.svg);
@@ -331,15 +331,15 @@
 }
 
 .sqlmysqlpostgresql {
-  background-image: linear-gradient(to left rgb(255, 255, 255), rgb(0, 0, 0));
+  background-image: linear-gradient(to left rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600));
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(255, 255, 255),
-      rgb(0, 0, 0)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(255, 255, 255),
+  //     rgb(0, 0, 0)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/sql_logo.svg);
@@ -364,11 +364,12 @@
 }
 
 .nosqlmongodb {
-  background-image: linear-gradient(to left rgb(9, 147, 78), rgb(0, 0, 0));
 
-  &::before {
-    background-image: linear-gradient(to left, rgb(9, 147, 78), rgb(0, 0, 0));
-  }
+  background-image: linear-gradient(to left rgba(44, 230, 59, 0.6), rgba(140, 197, 35, 0.6));
+
+  // &::before {
+  //   background-image: linear-gradient(to left, rgb(9, 147, 78), rgb(0, 0, 0));
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/mongodb_logo.svg);
@@ -393,15 +394,15 @@
 }
 
 .docker {
-  background-image: linear-gradient(to left rgb(11, 151, 196), rgb(54, 76, 83));
+  background-image: linear-gradient(to left rgba(28, 174, 231, 0.911), rgba(28, 168, 223, 0.911));
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(11, 151, 196),
-      rgb(54, 76, 83)
-    );
-  }
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(11, 151, 196),
+  //     rgb(54, 76, 83)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/docker_logo.svg);
@@ -425,18 +426,22 @@
   }
 }
 .html5 {
-  background-image: linear-gradient(
-    to left rgb(241, 101, 36) 50%,
-    rgb(54, 76, 83)
-  );
+  // background-image: linear-gradient(
+  //   to left rgb(241, 101, 36) 50%,
+  //   rgb(54, 76, 83)
+  // );
 
-  &::before {
-    background-image: linear-gradient(
-      to left,
-      rgb(241, 101, 36) 50%,
-      rgb(54, 76, 83)
-    );
-  }
+
+  background-image: linear-gradient(to left rgba(228, 99, 13, 0.511), rgba(224, 69, 21, 0.911));
+
+
+  // &::before {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     rgb(241, 101, 36) 50%,
+  //     rgb(54, 76, 83)
+  //   );
+  // }
 
   &::after {
     background-image: url(../../assets/img/logos/html5_logo.svg);
