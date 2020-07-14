@@ -95,8 +95,26 @@
 
         transition: 0.2s ease-in-out all;
 
+        position: relative;
+
         &:hover {
           color: #000;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 2px;
+
+          width: 0%;
+          height: 1px;
+          background-color: #000;
+          display: block;
+          transition: .2s ease-in-out all;
+        }
+
+        &:hover::after {
+          width: 100%;
         }
 
         @media screen and (max-width: 1200px) {
