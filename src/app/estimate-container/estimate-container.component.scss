@@ -236,6 +236,7 @@
     left: 0;
     color: #fff;
 
+
     @media screen and (max-width: 1076px) {
       font-size: 19px;
     }
@@ -262,6 +263,11 @@
     color: #fff;
     mix-blend-mode: screen;
 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     @media screen and (max-width: 1076px) {
       font-size: 70px;
     }
@@ -278,4 +284,8 @@
       font-size: 40px;
     }
   }
+}
+
+.yellow {
+  color: #dfbf52;
 }
