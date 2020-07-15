@@ -80,6 +80,22 @@
     &__p {
       font-size: 60px;
       color: #000;
+
+      @media screen and (max-width: 956px) {
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 656px) {
+        font-size: 45px;
+      }
+
+      @media screen and (max-width: 556px) {
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: 456px) {
+        font-size: 36px;
+      }
     }
 
     &__span {
@@ -150,9 +166,16 @@
           border-bottom: 1px solid #d7d7d7;
           background-color: transparent;
 
+          transition: .2s ease-in-out all;
+
           padding: 0px 0 10px 0;
           font-size: 25px;
           color: #000;
+
+          &:focus, &:active {
+            background-color: transparent;
+            border-bottom: 1px solid #707070;
+          }
 
           &:first-child {
             margin-top: 50px;

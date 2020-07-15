@@ -30,7 +30,7 @@ const TILES = [
   {
     type: TileType.EMPLOYEE,
     empName: 'Seweryn Kulec',
-    empPosition: 'Co Founder',
+    empPosition: 'CEO Founder',
     empPhotoUrl: Seweryn,
   },
   {
@@ -48,7 +48,7 @@ const TILES = [
   {
     type: TileType.EMPLOYEE,
     empName: 'Adam Krupa',
-    empPosition: 'Co Founder',
+    empPosition: 'CTO Co Founder',
     empPhotoUrl: Adam,
   },
   {
@@ -65,7 +65,7 @@ const TILES = [
   },
   {
     type: TileType.EMPLOYEE,
-    empName: 'Marcin Bejs',
+    empName: 'Marcin Rumierz',
     empPosition: 'UI/UX Designer',
     empPhotoUrl: Marcin,
   },
@@ -74,8 +74,8 @@ const TILES = [
   },
   {
     type: TileType.EMPLOYEE,
-    empName: 'Maciej Kijko',
-    empPosition: 'Unknow',
+    empName: 'Aleksander Jewuła',
+    empPosition: 'Tester',
     empPhotoUrl: Maciej,
   },
   {
